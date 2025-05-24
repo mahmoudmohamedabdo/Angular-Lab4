@@ -1,0 +1,5 @@
+<div class="card p-4 shadow-sm">
+  <h4>{{ product.name }}</h4>
+  <p>Price: {{ product.price }} EGP</p>
+  <a [routerLink]="['/products', product.id]" class="btn btn-primary">View Details</a>
+</div>

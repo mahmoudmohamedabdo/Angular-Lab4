@@ -1,0 +1,11 @@
+<div *ngIf="product" class="card p-4 shadow-sm">
+  <h3>{{ product!.name }}</h3>
+  <p><strong>ID:</strong> {{ product!.id }}</p>
+  <p><strong>Quantity:</strong> {{ product!.quantity }}</p>
+  <p style="color: red; font-weight: bold;">Price: {{ product!.price }} EGP</p>
+  <p><strong>Type:</strong> {{ product!.type }}</p>
+</div>
+
+<div *ngIf="!product">
+  <p class="text-danger">Product not found.</p>
+</div>
